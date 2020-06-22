@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet"> 
+    
+</head>
+<body>
+    <div class="container">
+        <div class="target">
+            <input  id="input-target" type="number" placeholder="Tell Us The Winning Target">
+        </div>
+        <div class="main-container">
+            <div class="player-1 active">
+                <h1 id="player-1-h1">Player-1</h1>
+                <div class="main-score-1">
+                    <h1>Score</h1>
+                    <p id="show-score-1">0</p>
+                </div>
+                <div class="current-score-1">
+                    <h4>Current score</h4>
+                    <p id="temp-score-1">0</p>
+                </div>
+            </div>
+            <div class="middle">
+                <button id="new-game">Again</button>
+                <img id="dice" src="images/1.jpg">
+               <button id="roll">Roll</button>
+               <button id="hold">Hold</button>
+            </div>
+            <div class="player-2 unactive">
+                <h1 id="player-2-h1">Player-2</h1>
+                <div class="main-score-2">
+                    <h1>Score</h1>
+                    <p id="show-score-2">0</p>
+                </div>
+                <div class="current-score-2">
+                    <h4>Current score</h4>
+                    <p id="temp-score-2">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

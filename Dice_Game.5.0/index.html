@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <style>
+    body{
+        background-image: url("images/backgrounds.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .container{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    button{
+        width: 100px;
+        height: 35px;
+        background-color: rgb(41, 41, 255);
+        color: white;
+        border-radius: 5px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width:600px){
+        p{
+            font-size: 13px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>How to Play Dice game.</h1>
+        <p>
+            1. This is a game between player 1 and player 2<br><br>
+            2. In this game user can roll the dice as many times he/she wants.<br><br>
+            3. At a time whatever score he will get, it will be his current score.<br><br>
+            4. When he will press hold button, That score will be added to the Main score.<br><br>
+            5. But its not that simple. 2 conditions are here.<br><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. when he rolls the dice, if he gets 1 then his current score will be zero 
+            and turn will be given to player 2.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. If you get 2 six in sequence then your main-score will be zero.<br><br>
+            6. so you need to secure your current score and add it to the main-score.<br><br>
+            7. Default target is 100 so when one of you will get the main score greater or equal to 100,
+            he will win.<br><br>
+            8. You can set target as you want from the input field.<br><br>
+            </p>
+
+        <button onclick="start()">Let's Start</button>
+    </div>
+    <script>
+        function start(){
+            window.open("main.html","_self");
+        }
+    </script>
+</body>
+</html>
